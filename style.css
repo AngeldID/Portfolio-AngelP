@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact;
+}
+
+body{
+    background:url(resources/fondo\ 2.gif)no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+
+}
+.logo{
+    color: blueviolet;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-text-stroke: 1px black;
+}
+.lbl-menu{
+    color: blueviolet;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: .3s;
+    -webkit-text-stroke: 1px black;
+}
+.lbl-menu label:hover{
+    color: whitesmoke;
+    background: #4813b3;
+    border-radius: 5px;
+}
+.activity-section i{
+    color: blueviolet;
+    font-size: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .3s;
+}
+.activity-section i:hover{
+    color: whitesmoke;
+    background: #4813b3;
+}
+section{
+    padding: 10rem 9% 2rem;
+}
+.home-section{
+    display: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.text-content div{
+    position: absolute;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    padding-bottom: 40px;
+    
+    
+}
+.text-content h2{
+    font-size: 75px;
+    color: blueviolet;
+    font-weight: 600;
+    -webkit-text-stroke: 1px black;
+}
+.text-content p{
+    max-width: 600px;
+    color: whitesmoke;
+    font-weight: 500;
+    -webkit-text-stroke: 0.5px black;
+}
+/*.text-content{
+    position: relative;
+}
+.text-content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: 0;
+    transform: scale(0.90);
+    padding: 30px;
+    padding-bottom: 40px;
+}*/
+#radio1,#radio2,#radio3{
+    display: none;
+
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+audio{
+    visibility: hidden;
+}
+
+#mail{
+    color: #fff;
+}
+#mail:hover{
+    color: #4813b3;
+}
+.tab1{
+    top: 40px;
+    left: 40px;
+}
